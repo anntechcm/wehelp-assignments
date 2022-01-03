@@ -7,8 +7,7 @@
     <link rel="stylesheet"type="text/css"href=layout.css/>
 </div>
 <style>
-.wrap{
-	max-width: 1200px;
+	.wrap{
 	margin: 0 auto; 
 }
 .clearfix:after{
@@ -71,11 +70,13 @@
 
 .welcome{
     background-color:#ffc0cb;color:white; margin-bottom: 20px;
+	margin:auto;
+	margin-bottom: 20px;
 }
 .middle{
     font-weight:bold;font-size:40px;
     text-align:center;padding:300px;
-    max-width:600px;
+	margin:auto;
 }
 main{
     display:flex;flex-wrap: wrap;
@@ -108,7 +109,19 @@ main{
     margin-right:10px;
     margin-left:10px;
 }
-
+@media (max-width:1200px){
+	main>.item{
+		width:45%;
+	}
+}
+@media (max-width:600px){
+	main>.item{
+		width:90%;
+	}
+	.welcome{
+		width:90%;
+	}
+}
 </style>
   <div class="wrap">
     <div class="header clearfix">
@@ -123,12 +136,12 @@ main{
             <li><a>item3</a></li>
             <li><a>item4</a></li>
 </div>
+</head>
+<body>
   <div class="welcome">
     <div class="middle">Kurt&Ann's Wedding Invitation
 </div>
 </div>
-  </head>
-  <body>
   <main>
     <div class="comtainer">
       <div class=img>
